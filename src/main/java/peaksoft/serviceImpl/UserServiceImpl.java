@@ -36,12 +36,12 @@ userDao.deleteUserById(id);
     }
 
     @Override
-    public void updateUser(User user) {
-userDao.updateUser(user);
+    public void updateUser(Long id,User user) {
+userDao.updateUser(id,user);
     }
 
     @Override
     public List<User> searchUserByName(String name) {
-        return List.of();
+        return userDao.searchUserByName(name);
     }
 }

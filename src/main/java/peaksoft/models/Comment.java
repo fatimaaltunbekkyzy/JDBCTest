@@ -9,12 +9,12 @@ import lombok.*;
 public class Comment {
     private Long id;
     private String text;
-    private Long postId;
     private Long userId;
+    private Long postId;
 
-    public Comment(Long userId, Long postId, String text) {
+    public Comment(String text,Long userId, Long postId) {
+        this.text = text;
         this.userId = userId;
         this.postId = postId;
-        this.text = text;
     }
 }

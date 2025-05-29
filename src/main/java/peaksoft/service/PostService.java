@@ -1,11 +1,10 @@
-package peaksoft.dao;
+package peaksoft.service;
 
-import peaksoft.models.Comment;
 import peaksoft.models.Post;
 
 import java.util.List;
 
-public interface PostDao {
+public interface PostService {
     Boolean CreatePostTable();
     void savePost(Post post);
     List<Post> getAllPost();
